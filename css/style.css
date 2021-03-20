@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /*background-color: #FFFFFF;*/
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/*text styles*/
+
+h1 {
+   
+    font-family: "Prata", serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #3E649E;
+    text-decoration: none;
+}
+h2 {
+    font-family: "Prata", serif;
+    font-weight: 500;
+    font-size: 36px;
+    color: #3E649E;
+    text-decoration: none;
+}
+h3 {
+    font-family: "Prata", serif;
+    font-weight: 500;
+    font-size: 28px;
+    color: #3E649E;
+    text-decoration: none;
+    padding-bottom: 80px;
+}
+h4 {
+    font-family: "La Belle Aurore", sans-serif;
+    font-size: 40px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+p {
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-decoration: none; 
+}
+
+
+
+
+
+
+/* header section*/
+
+
+
+.container {
+    width: 960px;
+    max-width: 100%;
+    margin: 0 auto;
+    
+}
+.main-header .container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+.EMlogo, h1 {
+    cursor: pointer;
+    display: inline;
+}
+h1 {
+    padding-left: 10px;
+}
+.main-nav {
+    margin-left: auto;
+    text-align: center;
+}
+.main-nav li {
+    display: inline;
+}
+.main-nav a {
+    display: inline-block;
+    padding: .5em 1.5em;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #3E649E;
+    text-decoration: none;
+}
+.main-nav li a {
+    transition: all 0.3s ease 0s;
+}
+.main-nav li a:hover {
+    color: #F277A4;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+/*hero section*/
+.hero-section .container {
+    display: flex;
+    padding-top: 80px;
+}
+
+
+
+/*footer section*/
+.footer-section, h4, p {
+    background-color: #817EC0;
+}
+
+/*.footer-section .container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}*/
+.grid-container {
+    display: grid;
+    background-color: #817EC0;
+    grid-template-areas:
+    'one one'
+    'two four'
+    'three four'
+    'five five';
+    grid-template-rows: 40% 27% 18% 15%;
+    grid-template-columns: 75% 25%;
+}
+
+.grid-container div {
+    background-color: #817EC0;
+       
+}
+
+.item1 {
+    grid-area: one;
+    padding-top: 80px;
+    padding-bottom: 20px;
+  
+    
+}
+.item2 {
+    grid-area: two;
+    padding-right: 100px;
+    padding-top: 20px;
+    
+}
+.item3 {
+    grid-area: three;
+    padding-right: 100px;
+}
+.item4 {
+    grid-area: four;
+    padding-top: 20px;
+}
+
+.item5 {
+    grid-area: five;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    color: #FFFFFF;
+    text-decoration: none; 
+    padding-bottom: 75px;
+    
+}
