@@ -39,7 +39,6 @@ h3 {
     font-size: 28px;
     color: #3E649E;
     text-decoration: none;
-    padding-bottom: 80px;
 }
 h4 {
     font-family: "La Belle Aurore", sans-serif;
@@ -51,7 +50,7 @@ p {
     font-family: "Lato", sans-serif;
     font-weight: 500;
     font-size: 18px;
-    color: #FFFFFF;
+    color: #3E649E;
     text-decoration: none; 
 }
 
@@ -120,9 +119,67 @@ h1 {
 
 
 
+
+
+/*skills*/
+.mySkills h2 {
+    text-align: center;
+    margin-top: 80px;
+}
+
+
+.skillsContainer {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+}
+
+
+
+.skillsGrid {
+    display: grid;
+    grid-template-areas:
+    "one two"
+    "three four";   
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+}
+
+.A {
+    grid-area: one;
+}
+.B {
+    grid-area: two;
+}
+.C {
+    grid-area: three;
+}
+.D {
+    grid-area: four;
+}
+
+.skillsGrid img {
+    padding: 15px;
+    
+}
+
+
+
+
+
+
 /*footer section*/
-.footer-section, h4, p {
+.footer-section {
     background-color: #817EC0;
+}
+.footer-section a {
+    color: #FFFFFF;
+}
+.footer-section p {
+    color: #FFFFFF;
 }
 
 /*.footer-section .container {
