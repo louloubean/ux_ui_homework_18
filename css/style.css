@@ -197,6 +197,7 @@ h1 {
     'five five';
     grid-template-rows: 40% 27% 18% 15%;
     grid-template-columns: 75% 25%;
+    padding-bottom: 100px;
 }
 
 .grid-container div {
