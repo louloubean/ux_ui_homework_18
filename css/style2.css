@@ -96,3 +96,7 @@ button:hover {
     border-radius: 2px;
     border: 2px solid #F277A4;
 }
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {...}

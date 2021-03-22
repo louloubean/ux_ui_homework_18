@@ -194,33 +194,36 @@ h1 {
     'one one'
     'two four'
     'three four'
-    'five five';
+    'five .';
     grid-template-rows: 40% 27% 18% 15%;
-    grid-template-columns: 75% 25%;
+    grid-template-columns: 60% 40%;
     padding-bottom: 100px;
 }
 
 .grid-container div {
     background-color: #817EC0;
+    margin-bottom: 30px;
        
 }
 
 .item1 {
     grid-area: one;
     padding-top: 80px;
-    padding-bottom: 20px;
+    
   
     
 }
 .item2 {
     grid-area: two;
-    padding-right: 100px;
+    padding-right: 50px;
     padding-top: 20px;
+    
     
 }
 .item3 {
     grid-area: three;
-    padding-right: 100px;
+    padding-right: 50px;
+    
 }
 .item4 {
     grid-area: four;
@@ -233,7 +236,118 @@ h1 {
     font-weight: 500;
     font-size: 36px;
     color: #FFFFFF;
-    text-decoration: none; 
-    padding-bottom: 75px;
+    text-decoration: none;
+    padding-top:40px; 
+
     
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    
+    .hero-section .container {
+        display: flex;
+        padding-top: 20px;
+    }
+    .hero-section h2 {
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 80px;
+    }
+    .hero-section h3 {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+  
+    .skillsContainer {
+        display: flex;
+        flex-direction: column;
+             
+    }
+    .A, .B, .C, .D{
+        text-align: center;
+    }
+   
+
+    .skillsGrid {
+        display: grid;
+        grid-template-areas:
+        "one" 
+        "two"
+        "three"
+        "four";   
+        grid-template-rows: 200px 200px 200px 200px;
+        grid-template-columns: 1fr;
+        margin: 20px 5px 20px 5px;
+               
+    }
+
+
+
+    .grid-container {
+        display: grid;
+        background-color: #817EC0;
+        grid-template-areas:
+        "one"
+        "four"
+        "two"
+        "three"
+        "five";
+        grid-template-rows: 250px 300px 200px 100px 100px;
+        grid-template-columns: 1fr;
+        margin: 20px 20px 20px 20px;
+        text-align: center;
+    }
+
+    .item5 {
+        font-family: "Lato", sans-serif;
+        font-weight: 500;
+        font-size: 28px;
+        color: #FFFFFF;
+        text-decoration: none;
+         
+        
+    }
+
+  
+
+
+    h1 {
+        font-family: "Prata", serif;
+        font-weight: 500;
+        font-size: 20px;
+        color: #3E649E;
+        text-decoration: none;
+    }
+    h2 {
+        font-family: "Prata", serif;
+        font-weight: 500;
+        font-size: 28px;
+        color: #3E649E;
+        text-decoration: none;
+    }
+    h3 {
+        font-family: "Prata", serif;
+        font-weight: 500;
+        font-size: 20px;
+        color: #3E649E;
+        text-decoration: none;
+    }
+    h4 {
+        font-family: "La Belle Aurore", sans-serif;
+        font-size: 30px;
+        color: #FFFFFF;
+        text-decoration: none;
+       
+    }
+    p {
+        font-family: "Lato", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        color: #3E649E;
+        text-decoration: none; 
+    }
+
 }
