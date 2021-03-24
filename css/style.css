@@ -21,8 +21,10 @@ h1 {
     font-weight: 500;
     font-size: 20px;
     color: #3E649E;
-    text-decoration: none;
+    
 }
+
+
 h2 {
     font-family: "Prata", serif;
     font-weight: 500;
@@ -73,7 +75,7 @@ p {
     flex-wrap: wrap;
     padding-top: 20px;
 }
-.EMlogo, h1 {
+.EMlogo {
     cursor: pointer;
     display: inline;
 }
